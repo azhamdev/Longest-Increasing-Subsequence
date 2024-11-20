@@ -12,13 +12,14 @@ function longestIncreasingSubsequence(sequence) {
     let left = 0, right = arr.length;
     while (left < right) {
       const mid = Math.floor((left + right) / 2);
-      console.log(`array:`, arr)
+      // console.log(`array:`, arr)
       if (arr[mid] < target) {
         left = mid + 1;
       } else {
         right = mid;
       }
     }
+    // console.log(`left :`, left)
     return left;
   }
 
